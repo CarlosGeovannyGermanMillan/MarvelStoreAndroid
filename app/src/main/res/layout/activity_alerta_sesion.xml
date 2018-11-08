@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.Actividades.AlertaSesion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/alerta_lyt_buttons">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:id="@+id/alerta_wbv_notificacion" />
+
+                    <ProgressBar
+                        android:visibility="visible"
+                        android:id="@+id/alerta_pgb_Cargando"
+                        android:layout_centerInParent="true"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                    </ProgressBar>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/alerta_lyt_buttons"
+            android:padding="5dp"
+            >
+            <Button
+                android:id="@+id/alerta_btn_Aceptar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="Aceptar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/alerta_btn_Cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="Cancelar"
+                android:textColor="@color/colorPrimaryRed"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.Actividades.detallePedido"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/detallePedido_txt_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="correoElectronico"/>
+        <TextView
+            android:id="@+id/detallePedido_txt_fechaPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fechaPedido"/>
+        <TextView
+            android:id="@+id/detallePedido_txt_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="estado"/>
+        <TextView
+            android:id="@+id/detallePedido_txt_referencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Referencia"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detallePedido_rcv_productos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

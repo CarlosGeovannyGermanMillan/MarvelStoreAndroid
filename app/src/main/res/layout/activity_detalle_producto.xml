@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".Vistas.Actividades.DetalleProducto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/detalleproducto_imgv_producto"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/detalleproducto_txt_nombrep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Producto"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detalleproducto_txt_preciop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="$00.00"
+            android:textColor="#000"
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:id="@+id/detalleproducto_txt_detallep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Detalle del producto"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="18dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/detalleproducto_imgv_carrito"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_menu_shop"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="28dp"
+                android:text="Agregar al Carrito!"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
